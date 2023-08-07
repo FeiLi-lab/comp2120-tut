@@ -9,8 +9,10 @@ def fib(n):
     return None
   elif n == 0:
     return 0
+  # base case of 1
   elif n == 1:
     return 1
+  # recursive case
   else:
     return fib(n - 1) + fib(n - 2)
 

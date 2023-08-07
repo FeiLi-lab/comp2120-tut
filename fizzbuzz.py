@@ -16,5 +16,7 @@ def fizzbuzz(n):
 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
+assert(fizzbuzz(15) == "Fizz Buzz")
+assert(fizzbuzz(45) == "Fizz Buzz")
 
 print("Code ran successfully!")
