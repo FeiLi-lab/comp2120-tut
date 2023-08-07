@@ -5,10 +5,14 @@ def fib(n):
   Negative numbers should return None
   TODO: Make the algorithm work for larger numbers or implement faster algorithms
   '''
+
+    # base case of 0
   if n == 0:
     return 0
+  # base case of 1
   elif n == 1:
     return 1
+  # recursive case
   else:
     return fib(n - 1) + fib(n - 2)
 
