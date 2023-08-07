@@ -5,7 +5,9 @@ def fib(n):
   Negative numbers should return None
   TODO: Make the algorithm work for larger numbers or implement faster algorithms
   '''
-  if n == 0:
+  if n < 0:
+    return None
+  elif n == 0:
     return 0
   elif n == 1:
     return 1
