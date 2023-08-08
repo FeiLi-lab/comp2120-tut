@@ -16,5 +16,12 @@ def fizzbuzz(n):
 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
+assert(fizzbuzz(15) == "FizzBuzz")
+assert(fizzbuzz(45) == "FizzBuzz")
+assert(fizzbuzz(93) == "Fizz")
+assert(fizzbuzz(125) == "Buzz")
+assert(fizzbuzz(225) == "FizzBuzz")
+assert(fizzbuzz(1125) == "FizzBuzz")
+
 
 print("Code ran successfully!")
