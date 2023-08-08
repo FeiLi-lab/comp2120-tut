@@ -14,7 +14,12 @@ def fizzbuzz(n):
     else:
         return str(n)
 
+# Test 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
+assert(fizzbuzz(0) == "Fizz Buzz")
+assert(fizzbuzz(-1) != "Buzz")
+assert(fizzbuzz(-58) == "-58")
+assert(fizzbuzz(50000) == "Buzz")
 
 print("Code ran successfully!")
