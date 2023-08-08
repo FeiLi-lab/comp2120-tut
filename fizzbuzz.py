@@ -5,16 +5,18 @@ def fizzbuzz(n):
     2. For the multiples of 5 print “Buzz”
     3. For numbers which are multiples of both 3 and 5 print “FizzBuzz"
     '''
-    if n % 15 == 0:
-        return "Fizz Buzz"
-    elif n % 5 == 0:
-        return "Buzz"
-    elif n % 3 == 0:
-        return "Fizz"
-    else:
+    val = ""
+    if n % 3 == 0:
+        val += "Fizz"
+    if n % 5 == 0:
+        val += "Buzz"
+    if len(val) == 0:
         return str(n)
+    else:
+        return val
 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
+assert(fizzbuzz(15) == "Fizz Buzz")
 
 print("Code ran successfully!")
