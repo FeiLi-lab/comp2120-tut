@@ -6,7 +6,7 @@ def fizzbuzz(n):
     3. For numbers which are multiples of both 3 and 5 print “FizzBuzz"
     '''
     if n % 15 == 0:
-        return "Fizz Buzz"
+        return "FizzBuzz"
     elif n % 5 == 0:
         return "Buzz"
     elif n % 3 == 0:
@@ -17,4 +17,7 @@ def fizzbuzz(n):
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
 
+#Test test test
+
+print("code ok")
 print("Code ran successfully!")
