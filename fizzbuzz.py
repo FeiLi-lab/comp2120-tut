@@ -23,3 +23,4 @@ assert(fizzbuzz(-58) == "-58")
 assert(fizzbuzz(50000) == "Buzz")
 
 print("Code ran successfully!")
+print("Code can run successfully!")

@@ -5,17 +5,28 @@ def fib(n):
   Negative numbers should return None
   TODO: Make the algorithm work for larger numbers or implement faster algorithms
   '''
-  if n == 0:
+
+  if (n < 0):
+    return None
+  elif n == 0:
     return 0
   elif n == 1:
     return 1
   else:
-    return fib(n - 1) + fib(n - 2)
+    l = [0,1]
+    index = 1
+    while (index < n):
+      l.append(l[-1] + l[-2])
+      index += 1
+
+
+    return l[-1]
 
 # Test cases
 assert(fib(1) == 1)
 assert(fib(21) == 10946)
 assert(fib(0) == 0)
 assert(fib(-1) == None)
+assert(fib(-2) == None)
 
 print("Code ran successfully!")
