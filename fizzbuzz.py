@@ -23,8 +23,9 @@ def fizzbuzz(n):
 
     if len(val) != 0:
         return val
-    else:
+# COmment
         return n
+    else:
 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
