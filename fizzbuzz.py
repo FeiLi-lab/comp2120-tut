@@ -6,14 +6,25 @@ def fizzbuzz(n):
     3. For numbers which are multiples of both 3 and 5 print “FizzBuzz"
     '''
     val = ""
-    if n % 3 == 0:
-        val += "Fizz"
-    if n % 5 == 0:
-        val += "Buzz"
-    if len(val) == 0:
-        return str(n)
+    
+    if n > 3:
+        val+= fizzbuzz(n-3)
+    elif n == 0:
+        return "Fizz"
     else:
+        return ""
+    
+    if n > 5:
+        val += fizzbuzz(n-5)
+    elif n == 0:
+        return "Buzz"
+    else:
+        return ""
+
+    if len(val) != 0:
         return val
+    else:
+        return n
 
 assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
