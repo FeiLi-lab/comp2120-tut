@@ -18,3 +18,4 @@ assert(fizzbuzz(3) == "Fizz")
 assert(fizzbuzz(5) == "Buzz")
 
 print("Code ran successfully!")
+print("Code can run successfully!")

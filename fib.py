@@ -27,5 +27,6 @@ assert(fib(1) == 1)
 assert(fib(21) == 10946)
 assert(fib(0) == 0)
 assert(fib(-1) == None)
+assert(fib(-2) == None)
 
 print("Code ran successfully!")
